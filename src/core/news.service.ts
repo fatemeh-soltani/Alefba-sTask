@@ -9,4 +9,9 @@ import { Observable } from 'rxjs';
 })
 export class NewsService {
   constructor(private http: HttpClient) {}
+  apiCall() {
+    return this.http.get(
+      'https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty'
+    );
+  }
 }

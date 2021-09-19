@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NewsService } from '../core/services/news.service';
+import { NewsService } from 'src/core/news.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
